@@ -1,3 +1,4 @@
+
 # kpmg-challenge
 Contains solution for the challenge 
 
@@ -45,6 +46,9 @@ Recommendation / Improvements:-
 * route53 record can be implemented with static page hosting in s3 when main app server fails for web-request
 * Its been assume asg layer is stateless, if it stores state efs/dfs drive can be mounted on bootup
 * Alsofor more complex requirement we can put caching server infront of database to reduce latency and improve speed of common queries
+
+**Reference Architecture**
+![kpmg-aws-infra](https://user-images.githubusercontent.com/65091252/120246055-09fe1a80-c267-11eb-91bc-0c5062de48ed.jpg)
 
 ## Challenge-2
 For this challenge I have used python to solve this problem to get ec2 metadata and then used findval function to pass instanceId and get the value
